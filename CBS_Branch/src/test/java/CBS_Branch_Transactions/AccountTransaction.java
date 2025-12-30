@@ -27,7 +27,7 @@ public class AccountTransaction extends BaseLoginForAllBranchModules
 		
 		//direct navigation
 		driver.navigate().to("https://demo.techplex.in/transaction/approvetransaction");
-		
+
 //		//Date
 //		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("tdate"))).click();
 //		Thread.sleep(2000);

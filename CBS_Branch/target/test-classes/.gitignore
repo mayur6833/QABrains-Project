@@ -1,3 +1,4 @@
+/LoginBranch/
 /CBS_Branch_Agent/
 /CBS_Branch_CoreBankingService_CurrentAccount/
 /CBS_Branch_CoreBankingService_FD/
@@ -17,5 +18,3 @@
 /CBS_Branch_TransactionReports/
 /CBS_Branch_Transactions/
 /CheckAllLinks/
-/LoginBranch/
-/PropertiesCodeForBranch/
