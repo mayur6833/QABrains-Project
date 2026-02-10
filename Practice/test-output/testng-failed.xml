@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SelenumCode.AutomatePriceRange">
+      <class name="SelenumCode.CheckPriceRange">
         <methods>
-          <include name="takeScreenShotIfFail"/>
           <include name="exit"/>
+          <include name="LowToHigh"/>
           <include name="setup"/>
-          <include name="checkProductPriceRange"/>
         </methods>
-      </class> <!-- SelenumCode.AutomatePriceRange -->
+      </class> <!-- SelenumCode.CheckPriceRange -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

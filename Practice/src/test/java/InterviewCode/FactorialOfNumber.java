@@ -2,16 +2,35 @@ package InterviewCode;
 
 public class FactorialOfNumber 
 {
-	public static void main(String[] args) 
+	public void method1()
 	{
-		int a = 4;
+		int num = 4;
 		
 		int fact =1;
-		for (int i = 1; i <=a; i++) 
+		for (int i = 1; i <= num; i++) 
 		{
-			fact*=i;
+			fact = fact*i;
 		}
 		System.out.println(fact);
+	}
+	
+	public void method2()
+	{
+		int num = 4;
 		
+		int fact = 1;
+		while(num >0)
+		{
+			fact*=num;
+			num--;
+		}
+		System.out.println(fact);
+	}
+	
+	public static void main(String[] args) 
+	{	
+		FactorialOfNumber obj = new FactorialOfNumber();
+		obj.method1();
+		obj.method2();
 	}
 }

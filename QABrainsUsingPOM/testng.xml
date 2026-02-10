@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="formSubmisson.formSubmissionDemoTest"/>
+      <class name="ECommerceSiteTest.CheckPriceRangeTest"/>
+      <class name="ECommerceSiteTest.favoritesORWishlistFunctionalityTest"/>
+      <class name="enterIntoSiteTest.LoginPageTest"/>
+      <class name="ECommerceSiteTest.CheckoutFlowTest"/>
+      <class name="enterIntoSiteTest.RegistrationPageTest"/>
+      <class name="ECommerceSiteTest.CartSetionTest"/>
+      <class name="enterIntoSiteTest.forgotPasswordPageTest"/>
+      <class name="BaseClassForLogin.BaseTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

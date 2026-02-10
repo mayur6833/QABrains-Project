@@ -88,9 +88,12 @@ public class AutomatePriceRange
 	@AfterMethod
 	public void takeScreenShotIfFail(ITestResult result) throws IOException
 	{
-		File set = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		File location = new File("C:\\Users\\Mahindarr\\git\\repository\\Practice\\ScreenShots\\"+result.getName()+".png");
-		FileUtils.copyFile(set, location);
+		if(ITestResult.FAILURE == result.getStatus())
+		{
+			File set = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			File location = new File("C:\\Users\\Mahindarr\\git\\repository\\Practice\\ScreenShots\\"+result.getName()+".png");
+			FileUtils.copyFile(set, location);
+		}
 	}
 	
 	@AfterClass
@@ -98,57 +101,7 @@ public class AutomatePriceRange
 	{
 		if(driver != null)
 		{
-			driver.close();
+			driver.quit();
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

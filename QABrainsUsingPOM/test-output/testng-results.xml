@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-02-10T19:20:10 IST" name="Default suite" finished-at="2026-02-10T19:21:04 IST" duration-ms="53724">
+    <groups>
+    </groups>
+    <test started-at="2026-02-10T19:20:10 IST" name="Default test" finished-at="2026-02-10T19:21:04 IST" duration-ms="53724">
+      <class name="ECommerceSiteTest.CheckoutFlowTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:ECommerceSiteTest.CheckoutFlowTest@38102d01]" started-at="2026-02-10T19:20:10 IST" name="launchBrowser" finished-at="2026-02-10T19:20:20 IST" duration-ms="10086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:ECommerceSiteTest.CheckoutFlowTest@38102d01]" started-at="2026-02-10T19:20:20 IST" name="login" finished-at="2026-02-10T19:20:25 IST" duration-ms="4435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="addToCartTestCase()[pri:1, instance:ECommerceSiteTest.CheckoutFlowTest@38102d01]" started-at="2026-02-10T19:20:25 IST" name="addToCartTestCase" finished-at="2026-02-10T19:20:29 IST" duration-ms="4633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTestCase -->
+        <test-method is-config="true" signature="ifTestFailed(org.testng.ITestResult)[pri:0, instance:ECommerceSiteTest.CheckoutFlowTest@38102d01]" started-at="2026-02-10T19:20:29 IST" name="ifTestFailed" finished-at="2026-02-10T19:20:29 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addToCartTestCase status=SUCCESS method=CheckoutFlowTest.addToCartTestCase()[pri:1, instance:ECommerceSiteTest.CheckoutFlowTest@38102d01] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ifTestFailed -->
+        <test-method signature="checkoutForm()[pri:2, instance:ECommerceSiteTest.CheckoutFlowTest@38102d01]" started-at="2026-02-10T19:20:29 IST" name="checkoutForm" finished-at="2026-02-10T19:20:32 IST" duration-ms="2551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutForm -->
+        <test-method is-config="true" signature="ifTestFailed(org.testng.ITestResult)[pri:0, instance:ECommerceSiteTest.CheckoutFlowTest@38102d01]" started-at="2026-02-10T19:20:32 IST" name="ifTestFailed" finished-at="2026-02-10T19:20:32 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkoutForm status=SUCCESS method=CheckoutFlowTest.checkoutForm()[pri:2, instance:ECommerceSiteTest.CheckoutFlowTest@38102d01] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ifTestFailed -->
+        <test-method signature="checkPrices()[pri:3, instance:ECommerceSiteTest.CheckoutFlowTest@38102d01]" started-at="2026-02-10T19:20:32 IST" name="checkPrices" finished-at="2026-02-10T19:21:03 IST" duration-ms="31496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPrices -->
+        <test-method is-config="true" signature="ifTestFailed(org.testng.ITestResult)[pri:0, instance:ECommerceSiteTest.CheckoutFlowTest@38102d01]" started-at="2026-02-10T19:21:03 IST" name="ifTestFailed" finished-at="2026-02-10T19:21:03 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkPrices status=SUCCESS method=CheckoutFlowTest.checkPrices()[pri:3, instance:ECommerceSiteTest.CheckoutFlowTest@38102d01] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ifTestFailed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ECommerceSiteTest.CheckoutFlowTest@38102d01]" started-at="2026-02-10T19:21:03 IST" name="tearDown" finished-at="2026-02-10T19:21:04 IST" duration-ms="406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ECommerceSiteTest.CheckoutFlowTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

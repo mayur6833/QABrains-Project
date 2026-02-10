@@ -58,7 +58,7 @@ public class BaseLoginForAllBranchModules
 	@AfterMethod(alwaysRun = true)
 	public void takeScreenshotOnFailTestCase(ITestResult result) throws IOException
 	{
-		if(!result.isSuccess())
+		if(ITestResult.FAILURE == result.getStatus())
 		{
 			try {
 				File FailSS = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

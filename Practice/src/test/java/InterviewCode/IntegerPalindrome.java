@@ -22,6 +22,7 @@ public class IntegerPalindrome
 		{
 			System.out.println("Number is not palindrome");
 		}
+		int max = Integer.MIN_VALUE;
 	}
 	
 }

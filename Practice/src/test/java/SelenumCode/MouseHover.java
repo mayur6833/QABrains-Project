@@ -20,6 +20,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import org.testng.internal.annotations.ITest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -60,15 +61,21 @@ public class MouseHover
 		} catch (Exception e) {
 			System.out.println("Not Working"+e.getMessage());
 		}
+		
+		
+		
 		throw new NoSuchElementException("Just checking throw");
 	}
 	
 	@AfterMethod
 	public void takeSSIfTestFail(ITestResult result) throws Exception
 	{
-		File fis = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File Location = new File("C:\\Users\\Mahindarr\\git\\repository\\Practice\\ScreenShots\\"+result.getName()+".png");
-		FileUtils.copyFile(fis, Location);
+		if(ITestResult.FAILURE == result.getStatus())
+		{
+			File fis = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			File Location = new File("C:\\Users\\Mahindarr\\git\\repository\\Practice\\ScreenShots\\"+result.getName()+".png");
+			FileUtils.copyFile(fis, Location);
+		}
 	}
 	
 	
